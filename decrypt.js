@@ -9,11 +9,6 @@ console.log(lookup);
 //console.log(data);
 
 _.each(data, d => {
-  process.stdout.write(c.blue(d) + ' ');
+  console.log(c.blue(d) + ' ' + c.green(lookup[d]));
 });
 
-console.log();
-
-_.each(data, d => {
-  process.stdout.write(c.green(lookup[d] + ' '));
-});
